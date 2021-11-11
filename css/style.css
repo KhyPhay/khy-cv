@@ -55,7 +55,7 @@ body{
 .w-100{
     width: 100%;
 }
-.active{
+.active a{
     color: #ccc;
     text-decoration: underline;
 }
@@ -197,10 +197,13 @@ body{
     }
     .item{
         width: 95%;
-        border-bottom: 2px solid white;
+        border-bottom: 1px solid white;
     }
     .item:last-child{
         border: none;
+    }
+    .item a{
+        font-size: 20px;
     }
     .lg-none{
         display: block;
