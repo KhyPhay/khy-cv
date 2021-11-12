@@ -176,8 +176,21 @@ body{
 .item1 {
     grid-column: 1 / span 3;
   }
+/* Homepage */
+.card-3{
+    display: grid;
+    grid-gap: 20px;
 
-
+}
+.hometown-item1{
+    grid-column: 1;
+}
+.hometown-item2{
+    grid-column: 2;
+}
+.hometown-item3{
+    grid-column: 3;
+}
 
 
 
@@ -241,7 +254,16 @@ body{
         display: block;
         grid-column: 1/ span 1;
     }
-
+    /* Hometown Page */
+    .md-none{
+        display: none;
+    }
+    .hometown-item1{
+        grid-column: 1 / span 3;
+    }
+    .md-none{
+        display: none;
+    }
 }
 
 
@@ -307,5 +329,25 @@ body{
      }
     .text-description{
          padding: 0;
+    }
+
+    /* Hometown */
+    .lg-none{
+        display: block;
+    }
+    .sm-show-bg-hometown{
+        padding: 10px;
+        color: white;
+        background-image: linear-gradient(rgba(0.75,0,0,0), rgba(0,0,0,2)), 
+        url(../images/preah_vihear.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .card-3{
+        display: block;
+        
+    }
+    .sm-none{
+        display: none;
     }
 }
