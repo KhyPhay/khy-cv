@@ -45,8 +45,7 @@ body{
     list-style: none;
 }
 .item{
-    margin-left: 20px;
-    padding: 20px;
+    padding: 15px;
 }
 .item:hover{
     color: #ccc;
@@ -64,6 +63,7 @@ body{
 .active{
     text-decoration: underline;
 }
+/* Home page */
 .lg-none{
     display: none;
 }
@@ -91,9 +91,15 @@ body{
 .line-heigh-30{
     line-height: 35px;
 }
-/* Banner */
-.font-20{
+/* Banner in Home page */
+.title{
     font-size: 20px;
+}
+p{
+    line-height: 25px;
+}
+.font-20{
+    font-size: 18px;
 }
 .sm-30{
     font-size: 45px;
@@ -109,9 +115,9 @@ body{
     background-position: center;
     background-size: cover;
 }
-.profile-picture> img{
-    width: 525px;
-    height: 525px;
+
+.profile-picture{
+    width: 50%;
 }
 .text-description{
     height: 100%;
@@ -134,17 +140,12 @@ body{
 .social-icons> a> i:hover{
     color: #ccc;
 }
-
-
-
 /* Education page */
 .lg-g-4{
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-
-
 .lg-g-4 .card:first-child{
     margin-left: 0;
 }
@@ -178,7 +179,6 @@ body{
 .card-3{
     display: grid;
     grid-gap: 20px;
-
 }
 .hometown-item1{
     grid-column: 1;
@@ -220,6 +220,11 @@ body{
 .md-long-card img{
     width: 49%;
 }
+.mr-20{
+    margin-right: 20px;
+}
+
+
 
 /* Templete */
 @media (max-width: 768px) {
@@ -238,7 +243,6 @@ body{
     .sm-30{
         font-size: 30px;
     }
-
     .item{
         margin-left: 5px;
         padding: 5px;
@@ -256,6 +260,7 @@ body{
     .font-20{
         font-size: 16px;
     }
+    .profile-picture
     .w-100{
         width: 100%;
     }
@@ -295,9 +300,11 @@ body{
     .lg-w-50{
         width: 100%;
     }
+    /* Cotact Page */
+    iframe{
+        height: 400px;
+    }
 }
-
-
 
 @media (max-width: 480px) {
     /* Header & Footer */
@@ -337,7 +344,9 @@ body{
     .lg-none{
         display: block;
     }
-
+    .title{
+        font-size: 20px;
+    }
      /* Education page */
      .lg-g-4{
         box-sizing: border-box;
