@@ -96,6 +96,9 @@ body{
 p{
     line-height: 25px;
 }
+.box-shadow{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
 .font-20{
     font-size: 18px;
 }
@@ -154,7 +157,7 @@ p{
     color: #fff;
     background: #536DFE;
     padding: 10px  20px;
-    clip-path: polygon(0 0, 100% 0%, 95% 49%, 100% 100%, 0 100%, 4% 52%);
+    clip-path: polygon(0 0, 100% 0%, 95% 50%, 100% 100%, 0 100%, 4% 50%);
 }
 
 /* HOBBY PAGE */
@@ -168,10 +171,14 @@ p{
 .item1 {
     grid-column: 1 / span 3;
   }
-/* Homepage */
+/* Hometown page */
 .card-3{
     display: grid;
     grid-gap: 20px;
+}
+
+.card{
+    padding: 10px;
 }
 .hometown-item1{
     grid-column: 1;
@@ -182,8 +189,6 @@ p{
 .hometown-item3{
     grid-column: 3;
 }
-
-
 
 /* Contact Page */
 .lg-g-2{
@@ -364,9 +369,6 @@ form{
         box-sizing: border-box;
         padding: 5px;
         display: block;
-     }
-     .card{
-         padding: 0;
      }
      .card img{
         width: 100%;
