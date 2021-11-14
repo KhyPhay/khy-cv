@@ -63,22 +63,23 @@ body{
 .active{
     text-decoration: underline;
 }
+.social-icons a{
+    color: white;
+}
 /* Home page */
 .lg-none{
     display: none;
 }
 .btn{
-    border: 2px solid black;
+    border: 2px solid #2B6CB8;
     text-decoration: none;
     border-radius: 5px;
-    background: #fff;
+    background: #536DFE;
     color: black;
     padding: 10px 20px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .btn:hover{
-    background: #ccc;
-
+    background: #2B6CB8;
 }
 .ai-center{
     display: flex;
@@ -87,9 +88,6 @@ body{
 }
 .mt-20{
     margin-top: 20px;
-}
-.line-heigh-30{
-    line-height: 35px;
 }
 /* Banner in Home page */
 .title{
@@ -115,10 +113,6 @@ p{
     background-position: center;
     background-size: cover;
 }
-
-.profile-picture{
-    width: 50%;
-}
 .text-description{
     height: 100%;
     padding: 20px;
@@ -129,7 +123,6 @@ p{
     color: white;
     background: #2B6CB8;
 }
-
 .social-icons a{
     color: #ffffff;
 }
@@ -137,8 +130,8 @@ p{
     margin: 10px;
     cursor: pointer;
 }
-.social-icons> a> i:hover{
-    color: #ccc;
+.social-icons> a:hover{
+    color: #536DFE;
 }
 /* Education page */
 .lg-g-4{
@@ -189,16 +182,36 @@ p{
 .hometown-item3{
     grid-column: 3;
 }
+
+
+
 /* Contact Page */
 .lg-g-2{
     display: flex;
 }
-.list-group-item{
-    padding: 15px 0 10px 10px ;
-    border-bottom: 1px solid white;
+.inpu-group{
+    display: flex;
 }
-.fw-bold{
-    font-weight: bold;
+::placeholder{
+    font-size: 16px;
+}
+.form-control{
+    border-radius: 5px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border: none;
+    width: 100%;
+    padding: 10px;
+}
+.w-48{
+    width: 48%;
+}
+textarea{
+    resize: none;
+}
+form{
+    padding: 10px;
+    box-sizing: border-box;
 }
 /* Future Page */
 .future-card{
@@ -220,10 +233,9 @@ p{
 .md-long-card img{
     width: 49%;
 }
-.mr-20{
+.lg-mr-20{
     margin-right: 20px;
 }
-
 
 
 /* Templete */
@@ -398,5 +410,9 @@ p{
     }
     .md-long-card{
         display: block;
+    }
+    /* Contact page */
+    .lg-mr-20{
+        margin-right: 0;
     }
 }
